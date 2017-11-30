@@ -22,8 +22,9 @@ shinyUI(fluidPage(
     
     # Printout sugar concentration
     mainPanel(
-      h4("SIR"),
-      textOutput("SIR")
+      h4("Summary"),
+      textOutput("SIR"),
+      textOutput("TDF")
     )
   )
 ))
