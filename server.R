@@ -16,7 +16,7 @@ shinyServer(function(input, output) {
   })
   
   output$SIR <- renderText({
-    paste("SIR=",calc_SIR())
+    paste("SIR=",round(calc_SIR(), 2))
     })
   output$TDF <- renderText({
     paste("TDF=",calc_TDF(), "cc/kg/day")
