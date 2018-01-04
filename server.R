@@ -1,25 +1,24 @@
 library(shiny)
 
 shinyServer(function(input, output) {
-
-  #SIR
-  calc_SIR <- reactive({
-    BW <- as.numeric(input$BW)
-    flow<- as.numeric(input$flow)
-    (input$glucose * flow / (6 * BW))
-  })
-  #TDF
-  calc_TDF <- reactive({
-    BW <- as.numeric(input$BW)
-    flow<- as.numeric(input$flow)
-    (flow * 24 / BW)
-  })
   
+  #Calculate SIR, TDF
   output$SIR <- renderText({
-    paste("SIR=",calc_SIR())
-    })
+    BW <- as.numeric(input$BW)
+    flow <- as.numeric(input$flow)
+    paste(round(input$glucose * flow / (6 * BW), 3), "mg/kg/min")
+    
+  })
   output$TDF <- renderText({
-    paste("TDF=",calc_TDF(), "cc/kg/day")
+    BW <- as.numeric(input$BW)
+    flow <- as.numeric(input$flow)
+    paste( flow * 24 / BW, "cc/kg/day")
+  })
+  output$protein <- renderText({
+    BW <- as.numeric(input$BW)
+    flow <- as.numeric(input$flow)
+    protein <- as.numeric(input$Protein)
+    paste( flow * 24 * protein / (100*BW), "g/kg/day")
   })  
   
 })
