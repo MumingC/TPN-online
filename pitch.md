@@ -13,6 +13,7 @@ What is TPN?
 
 Equation used
 ========================================================
+Try it <a href="https://mumingc.shinyapps.io/tpn_online/">Here at Shinyapps.io site</a>
 - SIR = flow rate (cc/hr) * glucose concentration (%) / (6 * Bodyweight (kg))
 - Total daily fluid (TDF, cc/kg/day) = flow rate (cc/hr) * 24 hours / Bodyweight (kg)
 - Protein (g/kg/day) = protein concentration (%) * TDF /100
