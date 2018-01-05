@@ -6,9 +6,11 @@ autosize: true
 
 What is TPN?
 ========================================================
-
-- TPN (Total Parenteral Nutrition) is frequently used in Intensive Care Unit of the hospital
-- In neonate and children, it is especially important to manage sugar infusion rate (SIR) and total daily fluid carefully to avoid hypoglycemia or fluid imbalance
+left: 30%
+![IV fluid](IV.png)
+***
+- **TPN (Total Parenteral Nutrition)** is frequently used in Intensive Care Unit of the hospital
+- In neonate and children, it is especially important to manage **sugar infusion rate (SIR)** and **total daily fluid** carefully to avoid hypoglycemia or fluid imbalance
 - One can quickly calculate the SIR and total daily fluid with the calculator online
 
 Equation used

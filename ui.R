@@ -9,7 +9,8 @@ shinyUI(fluidPage(
   # Sidebar with a slider input for number of glcuose 
   sidebarLayout(
     sidebarPanel(
-      p("Enter the following information to calculate the end result of TPN:"), 
+      p("Enter the following information to calculate the end result of Total parenteral nutrition:"), 
+      HTML('for more information, please see <a href="https://mumingc.github.io/TPN-online/pitch.html">introduction slides here</a>'),
       br(), br(),
       textInput("BW", "Bodyweight (kg)", 3),
       textInput("flow", "Flow Rate (cc/hr)", 5),
